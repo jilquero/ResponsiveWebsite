@@ -1,0 +1,99 @@
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #4ae;
+    color: #000040;
+}
+
+h1,
+h2,
+#stopka {
+    background: #000040;
+    color: #8080ff;
+    text-align: center;
+}
+
+#tresc {
+    background: #80ffff;
+}
+
+#menu {
+    background: #ffffff;
+}
+
+table {
+    background: #ffffb3;
+    text-align: center;
+    width: 94%;
+    margin: 2%;
+    border: 1pt solid #000040;
+    table-layout: fixed;
+}
+
+caption {
+    font-size: 150%
+}
+
+tfoot,
+thead {
+    background: #0000a0;
+    color: #ffffff;
+    font-size: 120%;
+    word-wrap: break-word;
+}
+
+td,
+th {
+    border: 1pt solid #000040;
+}
+
+tfoot a {
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background: #ffffff;
+}
+
+#menu ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    list-style: none;
+    border: #8080ff solid 3px;
+}
+
+#menu ul li {
+    background-color: #9e9ee0;
+    border-radius: 5px;
+    border: #4ae solid 3px;
+    padding: 10px;
+    max-width: 250px;
+    flex: 1 1 auto;
+}
+
+#tresc {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#tresc h3 {
+    border-bottom: 3px solid #0000a0;
+}
+
+@media screen and (max-width: 600px) {
+    #menu ul li {
+        max-width: 100%;
+    }
+}

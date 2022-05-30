@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dotacja</title>
+  </head>
+
+  <body>
+    <div id="kontener">
+      <div id="baner">
+        <h1>Formularz dotacji</h1>
+      </div>
+      <div id="tresc">
+        <form action="#" method="get">
+          <fieldset>
+            Beneficjent:
+            <input
+              type="text"
+              title="Nazwa beneficjenta"
+              list="beneficjent"
+              name="beneficjent"
+              required
+            /><br />
+
+            <datalist id="beneficjent">
+              <option value="Michał"></option>
+              <option value="Łukasz"></option>
+              <option value="Asia"></option>
+              <option value="Róża"></option>
+            </datalist>
+
+            Wartość dotacji:
+            <input
+              type="number"
+              name="wartosc"
+              required
+              min="20"
+              step="5"
+              title="Kwota jaka zamierzasz przekazac"
+            /><br />
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Dane karty płatniczej:</legend>
+
+            Karta:
+            <input
+              type="radio"
+              name="kto"
+              value="Visa"
+              required
+              title="Ten długio numer na karcie"
+            />
+            Visa <input type="radio" name="kto" value="MC" required />Masster
+            Card
+            <br />
+            Numer:
+            <input
+              type="text"
+              pattern="(^[0-9]{13}$)|(^[0-9]{16}&)"
+              name="numer"
+            /><br />
+            Data ważności:<input
+              type="text"
+              title="data napisana na karcie"
+            /><br />
+            Kod CVV:<input
+              type="text"
+              pattern="[0-9]{3,4}"
+              name="CVV"
+              title="ten taki numerek z tyłu"
+            /><br />
+          </fieldset>
+          <br />
+          Darczyńca:
+          <input
+            type="text"
+            pattern="^[A-Z][a-zA-Z]{2,}"
+            name="Darczynca"
+            title="Nazwa darczyncy"
+          /><br />
+          <br />
+          <input type="submit" value="Rejestruj" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

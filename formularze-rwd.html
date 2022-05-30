@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/formularze-rwd.css" type="text/css">
+    <title> Formularze </title>
+</head>
+
+<body>
+    <div id="kontener">
+        <div id="baner">
+            <h1>Szybki kurs HTML</h1>
+        </div>
+        <nav id="menu">
+            <ul id="nav">
+                <li><a href="index-rwd.html">Podstawowe znaczniki</a></li>
+                <li><a href="tabele-rwd.html">Tworzenie tabel</a></li>
+                <li><a href="formularze-rwd.html">Budowa formularzy</a></li>
+            </ul>
+        </nav>
+        <div id="tresc">
+            <form method="post">
+                <div class="main__content">
+                    <div class="table">
+                        <h3>Przykładowy formularz HTML</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td> Nazwisko: </td>
+                                    <td>
+                                        <input type="text" name="login" placeholder="Nazwisko"
+                                            pattern="^[A-ZŁŚĆŻŹ][a-złóść]+(\s[A-ZŁŚĆŻŹ][a-złóść]{2,10})?$"
+                                            title="Your login" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Wiek: </td>
+                                    <td><input type="text" name="age" placeholder="Wiek" title="Your age" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Państwo:</td>
+                                    <td>
+                                        <select name="panstwo" id="panstwo" required>
+                                            <option value="">Select</option>
+                                            <option value="pl">Polska</option>
+                                            <option value="en">Bri'ish</option>
+                                            <option value="ch">Made in China</option>
+                                            <option value="usa">United states of burger</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Adres e-mail: </td>
+                                    <td><input type="email" name="mail" placeholder="Email" title="Email" required />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="book">
+                        <h4>Zamawiam tutorial</h4>
+                        <input type="checkbox" name="jezyki" id="php" value="PHP">
+                        <label for="php">PHP</label>
+                        <input type="checkbox" name="jezyki" id="c" value="C">
+                        <label for="c">C/C++</label>
+                        <input type="checkbox" name="jezyki" id="java" value="J">
+                        <label for="java">Java</label>
+                        <br>
+                    </div>
+
+                    <div class="method">
+                        <h4>Sposób zapłaty: </h4>
+                        <div class="flex">
+                            <div class="row">
+                                <input type="radio" name="rodzaj_platnosci" id="euro" value="Ff" required>
+                                <label for="euro">eurocard</label>
+                            </div>
+                            <div class="row">
+                                <input type="radio" name="rodzaj_platnosci" id="visa" value="Ch" required>
+                                <label for="visa">visa</label>
+                            </div>
+                            <div class="row">
+                                <input type="radio" name="rodzaj_platnosci" id="bank" value="II" required>
+                                <label for="bank">przelew bankowy</label>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="submit" value="Wyślij">
+                <input type="reset" value="Anuluj">
+            </form>
+        </div>
+        <footer id="stopka"> &copy;BP </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #4ae;
+    color: #000040;
+}
+
+h1,
+h2,
+#stopka {
+    background: #000040;
+    color: #8080ff;
+    text-align: center;
+}
+
+#tresc {
+    background: #80ffff;
+}
+
+#menu {
+    background: #ffffff;
+}
+
+table {
+    background: #ffffb3;
+    text-align: center;
+    width: 94%;
+    margin: 2%;
+    border: 1pt solid #000040;
+}
+
+caption {
+    font-size: 150%
+}
+
+tfoot,
+thead {
+    background: #0000a0;
+    color: #ffffff;
+    font-size: 120%
+}
+
+td,
+th {
+    border: 1pt solid #000040;
+}
+
+tfoot a {
+    color: #ffffff;
+}
+
+*.parzysty {
+    background: #ffffff;
+}

@@ -1,0 +1,108 @@
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #4ae;
+    color: #000040;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+#stopka {
+    background: #000040;
+    color: #8080ff;
+    text-align: center;
+}
+
+#tresc {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #80ffff;
+}
+
+#menu {
+    background: #ffffff;
+}
+
+form {
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    min-width: 0;
+}
+
+#menu ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    list-style: none;
+    border: #8080ff solid 5px;
+}
+
+#menu ul li {
+    background-color: #8080ff;
+    padding: 10px;
+}
+
+#nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+}
+
+#nav>* {
+    flex: 1 1 auto;
+    color: white;
+}
+
+#nav li:nth-child(even) {
+    background-color: blueviolet;
+}
+
+#nav li a {
+    color: currentColor;
+}
+
+.main__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.main__content>* {
+    border: red solid 5px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.flex>* {
+    flex: 1 1 auto;
+}
+
+@media screen and (max-width: 600px) {
+    #tresc {
+        background-color: #80ffa0;
+    }
+
+    td {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,34 @@
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #4ae;
+    color: #000040;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+#stopka {
+    background: #000040;
+    color: #8080ff;
+    text-align: center;
+}
+
+#tresc {
+    background: #80ffff;
+}
+
+#menu {
+    background: #ffffff;
+}
+
+form {
+    margin: auto;
+    width: 200px;
+}

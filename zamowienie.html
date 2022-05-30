@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <title>Kreator pizzy</title>
+</head>
+
+<body>
+    <div id="kontener">
+        <div id="baner">
+            <h1>Kreator pizzy</h1>
+        </div>
+
+        <div id="tresc">
+            <form method="post">
+
+                <fieldset>
+                    <legend>Rozmiar:</legend>
+
+                    <input type="radio" name="rozmiar" id="mala" value="mala">
+                    <label for="mala">Mała</label>
+                    <input type="radio" name="rozmiar" id="srednia" value="srednia">
+                    <label for="srednia">Średnia</label>
+                    <input type="radio" name="rozmiar" id="duza" value="duza">
+                    <label for="duza">Duża</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dodatki:</legend>
+                    <input type="checkbox" name="dodatki" id="szynka" value="szynka">
+                    <label for="szynka">Szynka</label><br>
+                    <input type="checkbox" name="dodatki" id="salami" value="salami">
+                    <label for="salami">Salami</label><br>
+                    <input type="checkbox" name="dodatki" id="boczek" value="boczek">
+                    <label for="boczek">Boczek</label><br>
+                    <input type="checkbox" name="dodatki" id="papryka" value="papryka">
+                    <label for="papryka">Papryka</label><br>
+                    <input type="checkbox" name="dodatki" id="pomidor" value="pomidor">
+                    <label for="pomidor">Pomidor</label><br>
+                    <input type="checkbox" name="dodatki" id="ser" value="ser">
+                    <label for="ser">Ser</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sosy:</legend>
+                    Wybierz sos:
+                    <select name="sosy" id="sos" size="4" multiple>
+                        <option value="pomidorowy">Pomidorowy</option>
+                        <option value="czosnkowy">Czosnkowy</option>
+                        <option value="ketchup_lagodny">Ketchup łagodny</option>
+                        <option value="ketchup_pikantny">Ketchup pikantny</option>
+                        <option value="brak">>Brak</option>
+                    </select><br>
+                    Inne uwagi:
+                    <textarea name="uwagi" id="uwagi" cols="60" rows="4"></textarea>
+                </fieldset>
+                <br>
+
+                <input type="reset" value="Wyczyść dane">
+                <input type="submit" value="Wyślij zamówienie">
+
+            </form>
+        </div>
+</body>
+
+</html>
